@@ -13,7 +13,7 @@
 %% inputs: fhd,fId,n,d,range where fId=function no., n=swarm size, d=dimension, range=lower and upper bounds
 %% e.g. AHPSO(fhd,5,60,30,[-100 100])
 function [fmin] = AHPSO(fhd,fId,n,d,range)
-PPM=false; %on/off state of the PPM mechanism
+PPM=false; %on/off state of the PPM
 if PPM==true
     if d==10
         PPMpop=16;
